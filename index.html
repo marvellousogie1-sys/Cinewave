@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineWave — Discover Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">Cine<span>Wave</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#genres">Genres</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="menu" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR MOVIE DISCOVERY HUB</p>
+        <h1>Find your next <span>favorite movie.</span></h1>
+        <p class="hero-text">Discover popular films, browse genres, read quick reviews, and find trailers from official sources.</p>
+        <a class="button" href="#movies">Explore Movies</a>
+      </div>
+    </section>
+
+    <section class="section" id="movies">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Featured Movies</h2>
+        </div>
+        <input id="search" type="search" placeholder="Search movies..." aria-label="Search movies">
+      </div>
+
+      <div class="filters" id="genres">
+        <button class="filter active" data-genre="All">All</button>
+        <button class="filter" data-genre="Action">Action</button>
+        <button class="filter" data-genre="Comedy">Comedy</button>
+        <button class="filter" data-genre="Drama">Drama</button>
+        <button class="filter" data-genre="Sci-Fi">Sci-Fi</button>
+      </div>
+
+      <div class="grid" id="movieGrid"></div>
+      <p class="empty" id="empty">No movies found. Try another search.</p>
+    </section>
+
+    <section class="money section">
+      <p class="eyebrow">MONETIZATION</p>
+      <h2>Turn visitors into revenue</h2>
+      <div class="money-grid">
+        <article><b>Advertising</b><p>Connect an approved ad network after your site has useful original content and traffic.</p></article>
+        <article><b>Affiliate links</b><p>Link visitors to legitimate movie-ticket or streaming services and earn eligible commissions.</p></article>
+        <article><b>Sponsored content</b><p>Once your audience grows, movie-related brands can pay for clearly labeled promotions.</p></article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">ABOUT CINEWAVE</p>
+      <h2>Movies without the copyright headache.</h2>
+      <p>Use this site for movie discovery, reviews, news, and official trailers. Do not upload or distribute copyrighted movies without permission.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CineWave. Built for movie fans.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
